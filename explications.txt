@@ -1,0 +1,57 @@
+
+concat() : Cette méthode permet de concaténer plusieurs chaînes de caractères en une seule chaîne. Par exemple, si vous avez deux chaînes "Bonjour" et "monde", en utilisant concat() pour les joindre, vous obtiendrez la nouvelle chaîne "Bonjour monde".
+
+var string1 = "Hello";
+var string2 = "World";
+var string3 = string1.concat(" ", string2);
+console.log(string3);
+// Output: "Hello World"
+
+replace() : Cette méthode permet de remplacer une partie spécifiée d'une chaîne avec une autre valeur. Par exemple, si vous avez une chaîne "Bonjour monde" et que vous voulez remplacer "monde" avec "amis", vous pouvez utiliser replace() pour obtenir la nouvelle chaîne "Bonjour amis".
+
+var string1 = "Hello World";
+var string2 = string1.replace("World", "Friend");
+console.log(string2);
+// Output: "Hello Friend"
+
+
+slice() : Cette méthode permet d'extraire une partie d'une chaîne de caractères. Elle prend en entrée deux arguments qui représentent les indices de départ et de fin de la section à extraire. Par exemple, si vous avez une chaîne "Bonjour monde" et que vous voulez extraire "monde", vous pouvez utiliser slice(7, 11) pour obtenir la nouvelle chaîne "monde".
+
+var string1 = "Hello World";
+var string2 = string1.slice(0, 5);
+console.log(string2);
+// Output: "Hello"
+
+
+substring() : Cette méthode est similaire à slice() en ce qu'elle permet également d'extraire une partie d'une chaîne. Cependant, si l'un des arguments est négatif ou si le premier argument est plus grand que le second argument, substring() les traitera différemment. Par exemple, si vous avez une chaîne "Bonjour monde" et que vous voulez extraire "monde", vous pouvez utiliser substring(7, 11) pour obtenir la nouvelle chaîne "monde".
+
+var string1 = "Hello World";
+var string2 = string1.substring(0, 5);
+console.log(string2);
+// Output: "Hello"
+
+
+split() : Cette méthode permet de diviser une chaîne en un tableau de sous-chaînes en utilisant un séparateur spécifié. Par exemple, si vous avez une chaîne "Bonjour monde" et que vous voulez diviser cette chaîne en deux sous-chaînes "Bonjour" et "monde", vous pouvez utiliser split(" ") pour obtenir un tableau ["Bonjour", "monde"].
+var string1 = "Hello World";
+var string2 = string1.split(" ");
+console.log(string2);
+// Output: ["Hello", "World"]
+
+
+
+
+trim() : Cette méthode permet de supprimer les espaces en début et fin de chaîne. Par exemple, si vous avez une chaîne " Bonjour monde ", en utilisant trim(), vous obtiendrez la nouvelle chaîne "Bonjour monde".
+
+var string1 = "  Hello World  ";
+var string2 = string1.trim();
+console.log(string2);
+// Output: "Hello World"
+
+
+
+parseInt() : Cette fonction permet de convertir une chaîne de caractères en un nombre entier. Par exemple, si vous avez une chaîne "123", en utilisant parseInt(), vous pouvez la convertir en un nombre entier 123. Notez que parseInt() ne prend en compte que les caractères numériques et ignore les autres caractères de la chaîne. Si la chaîne ne peut pas être convertie en un nombre entier, parseInt() renvoie NaN (Not-a-Number).
+
+var string1 = "10";
+var num = parseInt(string1);
+console.log(num);
+// Output: 10
